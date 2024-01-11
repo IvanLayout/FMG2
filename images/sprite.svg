@@ -11,4 +11,12 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow1" viewBox="0 0 16 12">
 		<path d="M10.6131 0.5L9.96985 1.05L14.4724 5.60714H0V6.39286H14.4724L9.96985 10.95L10.6131 11.5L16 6L10.6131 0.5Z"/>
 	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="burger" viewBox="0 0 24 24">
+		<path d="M1.5 17.5H22.5M1.5 11.7105H22.5M1.5 6.5H22.5" fill="none"/>
+	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="ic_close" viewBox="0 0 24 24">
+		<path d="M24 1.27434L22.7257 0L12 10.7257L1.27434 0L0 1.27434L10.7257 12L0 22.7257L1.27434 24L12 13.2743L22.7257 24L24 22.7257L13.2743 12L24 1.27434Z" stroke="none"/>
+	</symbol>
 </svg>

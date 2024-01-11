@@ -16,7 +16,7 @@ $(() => {
 			if (entry.intersectionRatio > 0 && entry.target.getAttribute('data-map') && !entry.target.classList.contains('loaded-map')) {
 				entry.target.classList.add('loaded-map')
 
-				addScriptsURL('https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU')
+				addScriptsURL('http://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU')
 			}
 		}
 	}
@@ -247,30 +247,13 @@ function mapInit(){
 		}
 
 		var myMap = new ymaps.Map("map", {
-			center: [55.796326778940575, 60.10939410767465],
-			zoom: 5
+			center: [55.69248611606577, 37.66350492902338],
+			zoom: 15
 		}),
-		myPlacemark = new ymaps.Placemark([59.92752726746504, 30.295593877897847], {}, {
-			iconImageHref: 'images/marker.png',
-			iconImageSize: [iconW, iconH],
-			iconImageOffset: [iconWO, iconHO],
-		}),
-		myPlacemark2 = new ymaps.Placemark([55.75153047107064, 37.61765893389772], {}, {
-			iconImageHref: 'images/marker.png',
-			iconImageSize: [iconW, iconH],
-			iconImageOffset: [iconWO, iconHO],
-		}),
-		myPlacemark3 = new ymaps.Placemark([55.796326778940575, 49.10939410767465], {}, {
-			iconImageHref: 'images/marker.png',
-			iconImageSize: [iconW, iconH],
-			iconImageOffset: [iconWO, iconHO],
-		}),
-		myPlacemark4 = new ymaps.Placemark([54.983107656536184, 82.89616436257408], {}, {
-			iconImageHref: 'images/marker.png',
-			iconImageSize: [iconW, iconH],
-			iconImageOffset: [iconWO, iconHO],
+		myPlacemark = new ymaps.Placemark([55.69248611606577, 37.66350492902338], {
+			balloonContent: '', iconCaption: 'Nagatino i-land'
 		})
 
-		myMap.geoObjects.add(myPlacemark).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4)
+		myMap.geoObjects.add(myPlacemark)
 	})
 }

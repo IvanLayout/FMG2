@@ -48,25 +48,65 @@
 							</a>
 						</div>
 
-						<nav class="header__menu _flex">
-							<div class="header__menu-item">
-								<a href="/" class="header__menu-btn">О компании</a>
+						<div class="header__block">
+							<div class="header__bg">
+								<div class="header__logo">
+									<a href="/">
+										<img src="images/logo.jpg" alt="">
+									</a>
+								</div>
+
+								<button type="button" class="mob-menu-close">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_close"></use>
+									</svg>
+								</button>
+
+								<nav class="header__menu _flex">
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">О компании</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Бренды</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Новости</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Акции</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Контакты</a>
+									</div>
+								</nav>
+
+								<div class="heade__contacts">
+									<div class="heade__contacts-item">
+										<div class="heade__contacts-title">Телефон офиса в г. Москве:</div>
+
+										<div class="heade__contacts-phone">
+											<a href="tel:+74959265050">+7 (495) 926-50-50</a>
+										</div>
+									</div>
+
+									<div class="heade__contacts-item">
+										<div class="heade__contacts-title">Телефон офиса в г. Домодедово:</div>
+
+										<div class="heade__contacts-phone">
+											<a href="tel:+74959265058">+7 (495) 926-50-58</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="header__menu-item">
-								<a href="/" class="header__menu-btn">Бренды</a>
-							</div>
-							<div class="header__menu-item">
-								<a href="/" class="header__menu-btn">Новости</a>
-							</div>
-							<div class="header__menu-item">
-								<a href="/" class="header__menu-btn">Акции</a>
-							</div>
-							<div class="header__menu-item">
-								<a href="/" class="header__menu-btn">Контакты</a>
-							</div>
-						</nav>
+						</div>
 
 						<div class="header__btns _flex">
+							<button type="button" class="header__btn mob-menu-btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#burger"></use>
+								</svg>
+							</button>
+
 							<a href="/" class="header__btn">
 								<svg>
 									<use xlink:href="images/sprite.svg#ic_user"></use>
@@ -78,12 +118,6 @@
 									<use xlink:href="images/sprite.svg#ic_lupa"></use>
 								</svg>
 							</a>
-
-							<button type="button" class="mob-menu-btn">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
 						</div>
 					</div>
 				</header>
@@ -97,7 +131,7 @@
 								<div class="first-section__title">Компания <br>«А Зет»</div>
 							</div>
 
-							<div class="first-section__subtitle">— комплексный поставщик товаров <br>повседневного спроса FMCG. Основана в 1992 году.</div>
+							<div class="first-section__subtitle">— комплексный поставщик товаров <br>повседневного спроса FMCG. Основана в 1992&nbsp;году.</div>
 						</div>
 
 
@@ -539,43 +573,8 @@
 						</div>
 
 						<div class="partner-program__planet">
-							<img data-src="images/planet.svg" src="images/img_plug.png" alt="" class="lazyload">
-						</div>
-					</div>
-				</section>
-
-
-				<section class="partners _marg">
-					<div class="cont">
-						<div class="main-title">партнеры</div>
-
-						<div class="partners__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<a href="/" class="partners__partner">
-										<img src="images/tmp/partner1.svg" alt="">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="/" class="partners__partner">
-										<img src="images/tmp/partner2.svg" alt="">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="/" class="partners__partner">
-										<img src="images/tmp/partner3.svg" alt="">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="/" class="partners__partner">
-										<img src="images/tmp/partner4.png" alt="">
-									</a>
-								</div>
-								<div class="swiper-slide">
-									<a href="/" class="partners__partner">
-										<img src="images/tmp/partner5.svg" alt="">
-									</a>
-								</div>
+							<div class="partner-program__planet-wrap">
+								<img data-src="images/planet.svg" src="images/img_plug.png" alt="" class="lazyload">
 							</div>
 						</div>
 					</div>
@@ -630,7 +629,7 @@
 
 								<div class="specialization__box">
 									<div class="specialization__name">
-										<a href="/">Белье и чулочно-носочные изделия</a>
+										<a href="/">Белье и чулочно-<br>носочные изделия</a>
 									</div>
 
 									<div class="specialization__desc">Изделия итальянского бренда POMPEA и&nbsp;собственной ТМ FEMINA.</div>
@@ -648,7 +647,7 @@
 
 								<div class="specialization__box">
 									<div class="specialization__name">
-										<a href="/">уходовая Косметика и&nbsp;средства гигиены</a>
+										<a href="/">уходовая Косметика <br>и&nbsp;средства гигиены</a>
 									</div>
 
 									<div class="specialization__desc">Кремы и шампуни, скрабы, гели, молочко для тела и солнцезащитные средства, пластыри, зубные щетки.</div>
@@ -663,90 +662,209 @@
 				</section>
 
 
-				<section class="section-map">
-					<!-- <div class="section-map__map lazymap" id="map" data-map="map"></div> -->
-				</section>
-			</div>
+				<section class="partners _marg">
+					<div class="cont">
+						<div class="main-title">партнеры</div>
 
-
-			<footer class="footer">
-				<div class="footer__top">
-					<div class="cont _flex">
-						<div class="footer__logo">
-							<img src="images/logo_big.png" alt="">
-						</div>
-
-						<div class="footer__box">
-							<div class="footer__title">TRULY NOLEN PEST CONTROL</div>
-
-							<div class="footer__desc">
-								Pest control — это термин, который в буквальном переводе с английского обозначает «контроль вредителей». Это комплекс мероприятий по ограничению численности вредителей (снижению численности вредителей до допустимого уровня) на определённой территории. Pest control — это научно-обоснованная технология воздействия на сообщества животных-вредителей, с целью ограничения их численности и/или предотвращения наносимого ими вреда. Это ремесло, требующее высочайшего мастерства и всеобъемлющих знаний в самых разных областях: экологии, зоологии, медицины и химии.
-							</div>
-
-							<div class="footer__cols _flex">
-								<div class="footer__coll">
-									<div class="footer__smalltitle">Меню</div>
-
-									<div class="footer__menu">
-										<div class="footer__menu-item">
-											<a href="/" class="footer__menu-link">О компании</a>
-										</div>
-										<div class="footer__menu-item">
-											<a href="/" class="footer__menu-link">Отзывы</a>
-										</div>
-										<div class="footer__menu-item">
-											<a href="/" class="footer__menu-link">Новости</a>
-										</div>
-										<div class="footer__menu-item">
-											<a href="/" class="footer__menu-link">Энциклопедия</a>
-										</div>
-										<div class="footer__menu-item">
-											<a href="/" class="footer__menu-link">Контакты</a>
-										</div>
-									</div>
+						<div class="partners__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner1.svg" alt="">
+									</a>
 								</div>
-
-								<div class="footer__colr _flex">
-									<div class="footer__item">
-										<div class="footer__smalltitle">Адрес</div>
-	
-										<div class="footer__info">115035, Г.Москва, вн.тер. г. Муниципальный Округ Замоскворечье, ул Садовническая, д. 78, стр. 5, этаж 2, помещ./ком. I/4</div>
-									</div>
-	
-									<div class="footer__item">
-										<div class="footer__smalltitle">Телефон</div>
-	
-										<div class="footer__info">
-											<a href="tel:+74957405769">+7 (495) 740 57 69</a>
-										</div>
-									</div>
-	
-									<div class="footer__item">
-										<div class="footer__smalltitle">E-MAIL</div>
-	
-										<div class="footer__info">
-											<a href="mailto:nfo@trulynolen.ru">nfo@trulynolen.ru</a>
-										</div>
-									</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner2.svg" alt="">
+									</a>
 								</div>
-							</div>
-
-							<div class="footer__links _flex">
-								<div class="footer__links-item">
-									<a href="/" class="footer__link">Политика конфиденциальности</a>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner3.svg" alt="">
+									</a>
 								</div>
-
-								<div class="footer__links-item">
-									<a href="/" class="footer__link">Правила оказания услуг</a>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner4.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner5.svg" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<div class="footer__bottom">
+
+				<section class="our-project _marg">
+					<img data-src="images/logo_abs2.svg" src="images/img_plug.png" alt="" class="lazyload our-project__logo">
+
 					<div class="cont">
-						<div class="footer__copy">&copy; 2023 г. TRULY NOLEN RUSSIAN FEDERATION | Все права защищены</div>
+						<div class="our-project__flex _flex">
+							<div class="our-project__coll">
+								<div class="our-project__coll-top">
+									<div class="main-title">Наши проекты</div>
+
+									<div class="our-project__title">Поддержка экологических инициатив от GP</div>
+
+									<div class="our-project__desc">
+										Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях.
+									</div>
+								</div>
+
+								<div class="our-project__coll-bot">
+									<div class="our-project__coll-title">Сдайте батарейки <br>на переработку:</div>
+
+									<div class="our-project__btn">
+										<a href="/" class="btn-bord">
+											<span>
+												сдать на переработку
+												<svg>
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="our-project__colr _flex">
+								<div class="our-project__img">
+									<div class="our-project__img-wrap">
+										<img data-src="images/tmp/img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+									</div>
+								</div>
+
+								<div class="our-project__links _flex">
+									<a href="/" class="our-project__link">
+										<span>Союзмультфильм</span>
+									</a>
+
+									<a href="/" class="our-project__link">
+										<span>Старт (ребрендинг)</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="main-contacts _marg">
+					<div class="cont">
+						<div class="main-contacts__flex _flex">
+							<div class="main-contacts__coll">
+								<div class="main-title">Контакты</div>
+
+								<div class="main-subtitle">Всегда открыты для сотрудничества <br>и рады новым проектам.</div>
+
+								<div class="main-contacts__items">
+									<div class="main-contacts__item">
+										<div class="main-contacts__item-title">Телефон офиса в г. Москве:</div>
+
+										<div class="main-contacts__phone">
+											<a href="tel:+74959265050">+7 (495) 926-50-50</a>
+										</div>
+									</div>
+									<div class="main-contacts__item">
+										<div class="main-contacts__item-title">Телефон офиса в г. Домодедово:</div>
+
+										<div class="main-contacts__phone">
+											<a href="tel:+74959265058">+7 (495) 926-50-58</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="main-contacts__map lazymap" id="map" data-map="map"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont ">
+					<div class="footer__top _flex">
+						<div class="footer__logo">
+							<img src="images/logo.jpg" alt="">
+						</div>
+
+						<div class="footer__items _flex">
+							<div class="footer__items-item">
+								<div class="footer__title">
+									<a href="/">Информация</a>
+								</div>
+
+								<div class="footer__menu">
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Стать партнером</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Новости</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Акции</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Бренды</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__items-item">
+								<div class="footer__title">
+									<a href="/">О компании</a>
+								</div>
+
+								<div class="footer__menu">
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">О нас</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Вакансии</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Контакты</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<form action="" class="form-subscribe">
+							<div class="form-subscribe__title">ПОДПИСКА НА НОВОСТИ</div>
+
+							<div class="form-subscribe__subtitle">Узнавайте первыми об актуальных проектах, <br>событиях и новых рекордах А Зет</div>
+
+							<div class="form-subscribe__flex _flex">
+								<input type="email" value="" placeholder="examle@gmail.com" class="form-subscribe__input">
+
+								<button type="submit" class="form-subscribe__submit">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="form-subscribe__agree">Отправляя данные,вы соглашаетесь с <a href="/" target="_blank">Правилами обработки персональных данных</a></div>
+						</form>
+					</div>
+
+					<div class="footer__bot _flex">
+						<div class="footer__copy">&copy; Copyright, 2011-2023. «А Зет». Все права защищены</div>
+
+						<div class="footer__policy">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="footer__creator">
+							<a href="/">
+								<img data-src="images/creator.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
 					</div>
 				</div>
 			</footer>
@@ -756,49 +874,6 @@
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
-
-
-		<section class="modal modal-gallery" id="modal-gallery">
-			<div class="modal-gallery__block">
-				<div class="modal-gallery__slider swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="modal-gallery__img">
-								<img data-src="images/tmp/gallery_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="modal-gallery__img">
-								<img data-src="images/tmp/gallery_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="modal-gallery__img">
-								<img data-src="images/tmp/gallery_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="modal-gallery__img">
-								<img data-src="images/tmp/gallery_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-button-prev">
-						<svg>
-							<use xlink:href="images/sprite.svg#arrow"></use>
-						</svg>
-					</div>
-					<div class="slider-button-next">
-						<svg>
-							<use xlink:href="images/sprite.svg#arrow"></use>
-						</svg>
-					</div>
-				</div>
-
-				<div class="modal-gallery__name">инновации <br>На полях россии</div>
-			</div>
-		</section>
 
 
 		<!-- Подключение javascript файлов -->

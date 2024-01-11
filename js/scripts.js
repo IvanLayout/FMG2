@@ -13,24 +13,23 @@ $(() => {
 	$('body').on('click', '.mob-menu-btn', function (e) {
 		e.preventDefault()
 
-		if ($('.mob-menu-btn').hasClass('_active')) {
-			$('.mob-menu-btn').removeClass('_active')
-			$('.header').removeClass('_show')
-			$('.mob-header').removeClass('_hide')
-			$('body').removeClass('_menu-open')
-		} else {
-			$('.mob-menu-btn').addClass('_active')
-			$('.header').addClass('_show')
-			$('.mob-header').addClass('_hide')
-			$('body').addClass('_menu-open')
-		}
+		$('.header__block').addClass('_show')
+		$('body').addClass('_menu-open')
+	})
+
+
+	$('body').on('click', '.mob-menu-close', function (e) {
+		e.preventDefault()
+
+		$('.header__block').removeClass('_show')
+		$('body').removeClass('_menu-open')
 	})
 
 
 	if ($('.brands__slider').length) {
 		new Swiper(".brands__slider", {
 			loop: false,
-			spaceBetween: 34,
+			spaceBetween: 42,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -42,6 +41,14 @@ $(() => {
 				loadedClass: 'loaded',
 				checkInView: true,
 				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 42
+				},
+				'480': {
+					spaceBetween: 34
+				}
 			}
 		})
 	}
@@ -62,6 +69,14 @@ $(() => {
 				loadedClass: 'loaded',
 				checkInView: true,
 				loadOnTransitionStart: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 28
+				},
+				'480': {
+					spaceBetween: 48
+				}
 			}
 		})
 	}
