@@ -107,11 +107,11 @@
 								</svg>
 							</button>
 
-							<a href="/" class="header__btn">
+							<button type="button" data-content="#modal-reg" class="header__btn modal-btn">
 								<svg>
 									<use xlink:href="images/sprite.svg#ic_user"></use>
 								</svg>
-							</a>
+							</button>
 
 							<a href="/" class="header__btn">
 								<svg>
@@ -606,7 +606,7 @@
 
 							<div class="specialization__item">
 								<div class="specialization__icon">
-									<img data-src="images/ic_info1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									<img data-src="images/ic_info2.svg" src="images/img_plug.png" alt="" class="lazyload">
 								</div>
 
 								<div class="specialization__box">
@@ -624,7 +624,7 @@
 
 							<div class="specialization__item">
 								<div class="specialization__icon">
-									<img data-src="images/ic_info1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									<img data-src="images/ic_info3.svg" src="images/img_plug.png" alt="" class="lazyload">
 								</div>
 
 								<div class="specialization__box">
@@ -642,7 +642,7 @@
 
 							<div class="specialization__item">
 								<div class="specialization__icon">
-									<img data-src="images/ic_info1.svg" src="images/img_plug.png" alt="" class="lazyload">
+									<img data-src="images/ic_info4.svg" src="images/img_plug.png" alt="" class="lazyload">
 								</div>
 
 								<div class="specialization__box">
@@ -757,9 +757,11 @@
 					<div class="cont">
 						<div class="main-contacts__flex _flex">
 							<div class="main-contacts__coll">
-								<div class="main-title">Контакты</div>
+								<div class="main-contacts__top">
+									<div class="main-title">Контакты</div>
 
-								<div class="main-subtitle">Всегда открыты для сотрудничества <br>и рады новым проектам.</div>
+									<div class="main-subtitle">Всегда открыты для сотрудничества <br>и&nbsp;рады новым проектам.</div>
+								</div>
 
 								<div class="main-contacts__items">
 									<div class="main-contacts__item">
@@ -849,7 +851,7 @@
 								</button>
 							</div>
 
-							<div class="form-subscribe__agree">Отправляя данные,вы соглашаетесь с <a href="/" target="_blank">Правилами обработки персональных данных</a></div>
+							<div class="form-subscribe__agree">Отправляя данные,вы соглашаетесь с&nbsp;<a href="/" target="_blank">Правилами обработки персональных данных</a></div>
 						</form>
 					</div>
 
@@ -874,6 +876,175 @@
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="modal" id="modal-reg">
+			<div class="modal-title">Регистрация</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">E-mail <span>*</span></div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="checkboxes">
+					<div class="checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox__text">
+								<span>Подтверждаю свое согласие на получение информации о новинках и выгодных предложениях</span>
+							</span>
+						</label>
+					</div>
+	
+					<div class="checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox__text">
+								<span>Подтверждаю свое согласие на обработку и&nbsp;хранение моих <a href="/" target="_blank">персональных данных</a> в соответствии с пользовательским соглашением</span>
+							</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Зарегистрироваться</button>
+				</div>
+
+				<div class="modal__info">
+					<button type="button" data-content="#modal-login" class="modal-btn">Войти</button> в уже существующий аккаунт
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-login">
+			<div class="modal-title">Авторизация/Регистрация</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">E-mail</div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+
+						<button type="button" class="form__eye">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_eye"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="modal__line _flex">
+					<div class="checkbox-dot">
+						<label class="checkbox-dot__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox-dot__text">
+								<span>Запомнить меня</span>
+							</span>
+						</label>
+					</div>
+	
+					<div class="forgot-password">
+						<button type="button" data-content="#modal-forgot" class="modal-btn">Забыли пароль?</button>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Войти</button>
+				</div>
+
+				<div class="modal__info">
+					Нет аккаунта? <button type="button" data-content="#modal-reg" class="modal-btn">Зарегистрироваться</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-forgot">
+			<div class="modal-title">Восстановление данных</div>
+
+			<div class="modal-subtitle">Введите ваш адрес электронной почты, и мы отправим на него ссылку для смены пароля</div>
+
+			<form action="" class="form modal__form forgot-send">
+				<div class="form__line">
+					<div class="form__label">E-mail</div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Отправить</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-recovery">
+			<div class="modal-title">Восстановление данных</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">Код из письма</div>
+
+					<div class="form__filed">
+						<input type="text" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Повторите пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Отправить</button>
+				</div>
+			</form>
+		</section>
+
+		
+		<section class="modal modal-request" id="modal-request">
+			<div class="modal-request__wrap">
+				<div class="modal-request__box">
+					<div class="modal-request__icon">
+						<img data-src="images/ic_check.svg" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+
+					<div class="modal-request__title">Ваша заявка успешно оформлена!</div>
+
+					<div class="modal-request__desc">В ближайшее время с вами <br>свяжется наш менеджер</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->

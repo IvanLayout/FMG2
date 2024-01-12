@@ -5,8 +5,8 @@ WW = window.innerWidth || document.clientWidth || document.querySelector('body')
 fakeResize = false
 fakeResize2 = true
 
-if (document.body.clientWidth < 375) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+if (document.body.clientWidth < 360) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 }
 
 $(() => {
@@ -23,6 +23,18 @@ $(() => {
 
 		$('.header__block').removeClass('_show')
 		$('body').removeClass('_menu-open')
+	})
+
+
+	$('body').on('submit', '.forgot-send', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: '#modal-recovery',
+			type: 'inline'
+		}])
 	})
 
 
@@ -257,7 +269,7 @@ $(window).on('resize', () => {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true

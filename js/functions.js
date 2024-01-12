@@ -88,7 +88,7 @@ $(() => {
 	Fancybox.defaults.placeFocusBack = false
 
 	Fancybox.defaults.template = {
-		closeButton: '<svg viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="27.7803" width="39" height="4" transform="rotate(-45 0 27.7803)" fill="#414042"/><rect x="2.82837" width="39" height="4" transform="rotate(45 2.82837 0)" fill="#FDBB30"/></svg>',
+		closeButton: '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 1.27434L22.7257 0L12 10.7257L1.27434 0L0 1.27434L10.7257 12L0 22.7257L1.27434 24L12 13.2743L22.7257 24L24 22.7257L13.2743 12L24 1.27434Z" /></svg>',
 	}
 
 	// Всплывающие окна
@@ -117,6 +117,19 @@ $(() => {
 		},
 		Thumbs: {
 			autoStart: false,
+		}
+	})
+
+
+	$('body').on('click', '.form__eye', function (e) {
+		e.preventDefault()
+
+		if ( $(this).hasClass('_active') ){
+			$(this).removeClass('_active')
+			$(this).prev().attr('type','password')
+		} else{
+			$(this).addClass('_active')
+			$(this).prev().attr('type','text')
 		}
 	})
 

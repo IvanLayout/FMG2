@@ -103,6 +103,11 @@
         border-radius: 0;
     }
 
+    .main-news__title
+    {
+        font-weight: 700;
+    }
+
     .main-news__col
     {
         width: 100%;
