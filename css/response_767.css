@@ -365,6 +365,160 @@
     }
 
 
+    .page-lk__user-photo
+    {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+    }
+
+    .page-lk__user-name
+    {
+        font-size: 20px;
+    }
+
+    .page-lk__user-logout
+    {
+        margin-top: 19px;
+    }
+
+    .page-lk__top-btn
+    {
+        width: calc(100% - 140px);
+    }
+
+    .form__flex .form__line
+    {
+        width: 100%;
+    }
+
+    .info-password
+    {
+        min-height: 1px;
+        margin-top: -10px;
+    }
+
+    .info-password br
+    {
+        display: none;
+    }
+
+    .form__bot
+    {
+        margin-top: 10px;
+    }
+
+    .form__bot .form__submit
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 13px;
+    }
+
+    .form__bot .form__cancel
+    {
+        width: 100%;
+    }
+
+
+    .page-heade
+    {
+        margin-top: 20px;
+    }
+
+    .breadcrumbs
+    {
+        font-size: 12px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .page-lk
+    {
+        margin-top: 20px;
+    }
+
+    .page-lk__top
+    {
+        padding-bottom: 29px;
+    }
+
+    .form_lk
+    {
+        margin-top: 40px;
+    }
+
+
+    .form__sector + .form__sector
+    {
+        margin-top: 20px;
+        padding-top: 40px;
+    }
+
+
+    .products__table th
+    {
+        font-size: 14px;
+    }
+
+    .products__table td
+    {
+        font-size: 14px;
+
+        padding-left: 16px;
+    }
+
+    .products__table .products__table-name
+    {
+        padding-left: 16px;
+    }
+
+    .products__table-thumb
+    {
+        width: 60px;
+    }
+
+    .products__table .products__table-amount
+    {
+        width: 108px;
+    }
+
+
+    .banner__img
+    {
+        border-radius: 16px;
+    }
+
+    .stocks__grid
+    {
+        margin-left: -10px;
+    }
+
+    .stocks__grid .stock-item
+    {
+        width: calc(100%/2 - 10px);
+        margin-left: 10px;
+    }
+
+    .stock-item__box
+    {
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .wrap-btn
+    {
+        margin-top: 20px;
+    }
+
+    .pagination
+    {
+        margin-top: 10px;
+    }
+
+
     .footer
     {
         padding: 40px 0 53px;

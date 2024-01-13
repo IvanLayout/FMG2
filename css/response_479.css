@@ -121,6 +121,147 @@
     }
 
 
+    .page-lk__user-photo
+    {
+        width: 90px;
+        height: 90px;
+        margin-right: 14px;
+    }
+
+    .page-lk__user-box
+    {
+        padding-bottom: 60px;
+    }
+
+    .page-lk__user-name
+    {
+        font-size: 16px;
+    }
+
+    .page-lk__top-btn
+    {
+        width: calc(100% - 104px);
+    }
+
+    .page-lk__top-btn
+    {
+        margin-top: -40px;
+    }
+
+    .page-lk__top-btn .btn-black
+    {
+        font-size: 12px;
+        line-height: 40px;
+
+        padding: 0 22px;
+    }
+
+
+    .catalog
+    {
+        margin-top: 20px;
+    }
+
+    .search
+    {
+        padding-bottom: 30px;
+    }
+
+    .search .search__input
+    {
+        font-size: 14px;
+
+        height: 50px;
+    }
+
+    .products__table thead
+    {
+        display: none;
+    }
+
+    .products__table tbody tr
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        padding-bottom: 30px;
+    }
+
+    .products__table tbody td
+    {
+        display: block;
+    }
+
+    .products__table td
+    {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 18px;
+    }
+
+    .products__table-name
+    {
+        width: calc(100% - 86px);
+    }
+
+    .products__table .products__table-name
+    {
+        padding-top: 0;
+        padding-left: 30px;
+    }
+
+    .products__table .products__table-amount
+    {
+        width: calc(100% - 86px);
+        margin-left: auto;
+        padding-top: 14px;
+        padding-left: 30px;
+    }
+
+    .products__scroll-content
+    {
+        padding-bottom: 0;
+    }
+
+    .amount__val
+    {
+        width: 134px;
+        margin-left: 0;
+        padding: 0 12px;
+    }
+
+
+    .stocks_marg
+    {
+        margin-top: 10px;
+    }
+
+    .stocks__grid
+    {
+        margin-left: 0;
+    }
+
+    .stocks__grid .stock-item
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .stock-item__box
+    {
+        padding: 20px 19px 29px 19px;
+    }
+
+    .stock-item__desc
+    {
+        margin-top: 10px;
+    }
+
+
     .footer__items
     {
         display: block;

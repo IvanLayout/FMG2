@@ -93,6 +93,52 @@ $(() => {
 		})
 	}
 
+	if ($('.stocks__slider').length) {
+		new Swiper(".stocks__slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 3,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 20,
+					slidesPerView: 1
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 2
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				'1025': {
+					spaceBetween: 10,
+					slidesPerView: 3
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	}
+
 
 	//
 	if ($('.main-reviews__slider').length) {
@@ -231,6 +277,74 @@ $(() => {
 			}
 		})
 	}
+
+
+	//
+	$('body').on('click', '.amount__btn_minus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let minimum = parseFloat(input.data('minimum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal > minimum) {
+			input.val(inputVal - step)
+		}
+
+		if (inputVal-1 == minimum) {
+				$(this).prop("disabled", true)
+		}
+	})
+	
+	$('body').on('click', '.amount__btn_plus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let maximum = parseFloat(input.data('maximum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal < maximum) {
+			input.val(inputVal + step)
+
+			parent.find('.amount__btn_minus').prop("disabled", false)
+		}
+	})
+
+	$('.amount__input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
+
+		setTimeout(() => {
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
+		})
+	})
+
+	$('.products__scroll').each(function(e) {
+		let scrollHeight = $(this).prop('scrollHeight'),
+		height = $(this).innerHeight(),
+		height2 = $(this).height(),
+		heightContent = $(this).find('.products__scroll-content').height();
+
+		console.log(heightContent <= height2)
+
+		if (heightContent <= height2) {
+			$(this).closest('.products__wrap').addClass('_hide-shadow')
+		}
+
+		$(this).scroll(function(){
+			if ($(this).scrollTop() >= scrollHeight - height) {
+				$(this).closest('.products__wrap').addClass('_top')
+			}
+			else {
+				$(this).closest('.products__wrap').removeClass('_top')
+			}
+		});
+	})
 });
 
 

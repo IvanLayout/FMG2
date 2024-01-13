@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1024.css" media="(max-width: 1024px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header">
+					<div class="cont _flex">
+						<div class="header__logo">
+							<a href="/">
+								<img src="images/logo.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="header__block">
+							<div class="header__bg">
+								<div class="header__logo">
+									<a href="/">
+										<img src="images/logo.jpg" alt="">
+									</a>
+								</div>
+
+								<button type="button" class="mob-menu-close">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_close"></use>
+									</svg>
+								</button>
+
+								<nav class="header__menu _flex">
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">О компании</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Бренды</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Новости</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Акции</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-btn">Контакты</a>
+									</div>
+								</nav>
+
+								<div class="heade__contacts">
+									<div class="heade__contacts-item">
+										<div class="heade__contacts-title">Телефон офиса в г. Москве:</div>
+
+										<div class="heade__contacts-phone">
+											<a href="tel:+74959265050">+7 (495) 926-50-50</a>
+										</div>
+									</div>
+
+									<div class="heade__contacts-item">
+										<div class="heade__contacts-title">Телефон офиса в г. Домодедово:</div>
+
+										<div class="heade__contacts-phone">
+											<a href="tel:+74959265058">+7 (495) 926-50-58</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__btns _flex">
+							<button type="button" class="header__btn mob-menu-btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#burger"></use>
+								</svg>
+							</button>
+
+							<button type="button" data-content="#modal-reg" class="header__btn modal-btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_user"></use>
+								</svg>
+							</button>
+
+							<a href="/" class="header__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#ic_lupa"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</header>
+				<!-- End Шапка -->
+
+
+				<section class="page-heade">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="breadcrumbs__sep">/</span> Каталог
+						</div>
+
+						<h1 class="page-title">Каталог</h1>
+					</div>
+				</section>
+
+
+				<section class="catalog">
+					<div class="cont">
+						<div class="catalog__sorting _flex">
+							<a class="catalog__sorting-link _active">Все</a>
+							<a href="/" class="catalog__sorting-link">GP</a>
+							<a href="/" class="catalog__sorting-link">СТАРТ</a>
+							<a href="/" class="catalog__sorting-link">Еврогарант</a>
+							<a href="/" class="catalog__sorting-link">Dr.Safe</a>
+							<a href="/" class="catalog__sorting-link">FEMINA</a>
+							<a href="/" class="catalog__sorting-link">Pompea</a>
+							<a href="/" class="catalog__sorting-link">MARUSSIA</a>
+						</div>
+						
+						<div class="products">
+							<form action="" class="search">
+								<input type="text" value="" placeholder="Поиск" class="search__input">
+							</form>
+
+							<div class="products__wrap">
+								<div class="products__scroll">
+									<div class="products__scroll-content">
+										<table class="products__table">
+											<thead>
+												<tr>
+													<th colspan="3">Наименование</th>
+													<th>Количество</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="products__table-check">
+														<div class="checkbox-small">
+															<label class="checkbox-small__label">
+																<input type="checkbox" name="">
+
+																<span class="checkbox-small__text"></span>
+															</label>
+														</div>
+													</td>
+													<td class="products__table-thumb">
+														<div class="products__table-img">
+															<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</div>
+													</td>
+													<td class="products__table-name">
+														<a href="/">Лампа светодиодная СТАРТ LED F-Flame E14 7W 2700К</a>
+													</td>
+													<td class="amount products__table-amount">
+														<div class="amount__val _flex">
+															<button type="button" class="amount__btn amount__btn_minus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_minus"></use>
+																</svg>
+															</button>
+
+															<input type="text" value="2" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3">
+
+															<button type="button" class="amount__btn amount__btn_plus">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_plus"></use>
+																</svg>
+															</button>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog__bg">
+							<button type="button" data-content="modal-request" class="btn-black btn-black_upper catalog__btn-black modal-btn">Отправить заявку</button>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont ">
+					<div class="footer__top _flex">
+						<div class="footer__logo">
+							<img src="images/logo.jpg" alt="">
+						</div>
+
+						<div class="footer__items _flex">
+							<div class="footer__items-item">
+								<div class="footer__title">
+									<a href="/">Информация</a>
+								</div>
+
+								<div class="footer__menu">
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Стать партнером</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Новости</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Акции</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Бренды</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__items-item">
+								<div class="footer__title">
+									<a href="/">О компании</a>
+								</div>
+
+								<div class="footer__menu">
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">О нас</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Вакансии</a>
+									</div>
+									<div class="footer__menu-item">
+										<a href="/" class="footer__menu-link">Контакты</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<form action="" class="form-subscribe">
+							<div class="form-subscribe__title">ПОДПИСКА НА НОВОСТИ</div>
+
+							<div class="form-subscribe__subtitle">Узнавайте первыми об актуальных проектах, <br>событиях и новых рекордах А Зет</div>
+
+							<div class="form-subscribe__flex _flex">
+								<input type="email" value="" placeholder="examle@gmail.com" class="form-subscribe__input">
+
+								<button type="submit" class="form-subscribe__submit">
+									<svg>
+										<use xlink:href="images/sprite.svg#arrow1"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="form-subscribe__agree">Отправляя данные,вы соглашаетесь с&nbsp;<a href="/" target="_blank">Правилами обработки персональных данных</a></div>
+						</form>
+					</div>
+
+					<div class="footer__bot _flex">
+						<div class="footer__copy">&copy; Copyright, 2011-2023. «А Зет». Все права защищены</div>
+
+						<div class="footer__policy">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="footer__creator">
+							<a href="/">
+								<img data-src="images/creator.svg" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="modal-reg">
+			<div class="modal-title">Регистрация</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">E-mail <span>*</span></div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="checkboxes">
+					<div class="checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox__text">
+								<span>Подтверждаю свое согласие на получение информации о новинках и выгодных предложениях</span>
+							</span>
+						</label>
+					</div>
+	
+					<div class="checkbox">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox__text">
+								<span>Подтверждаю свое согласие на обработку и&nbsp;хранение моих <a href="/" target="_blank">персональных данных</a> в соответствии с пользовательским соглашением</span>
+							</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Зарегистрироваться</button>
+				</div>
+
+				<div class="modal__info">
+					<button type="button" data-content="#modal-login" class="modal-btn">Войти</button> в уже существующий аккаунт
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-login">
+			<div class="modal-title">Авторизация/Регистрация</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">E-mail</div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+
+						<button type="button" class="form__eye">
+							<svg>
+								<use xlink:href="images/sprite.svg#ic_eye"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="modal__line _flex">
+					<div class="checkbox-dot">
+						<label class="checkbox-dot__label">
+							<input type="checkbox" name="">
+	
+							<span class="checkbox-dot__text">
+								<span>Запомнить меня</span>
+							</span>
+						</label>
+					</div>
+	
+					<div class="forgot-password">
+						<button type="button" data-content="#modal-forgot" class="modal-btn">Забыли пароль?</button>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Войти</button>
+				</div>
+
+				<div class="modal__info">
+					Нет аккаунта? <button type="button" data-content="#modal-reg" class="modal-btn">Зарегистрироваться</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-forgot">
+			<div class="modal-title">Восстановление данных</div>
+
+			<div class="modal-subtitle">Введите ваш адрес электронной почты, и мы отправим на него ссылку для смены пароля</div>
+
+			<form action="" class="form modal__form forgot-send">
+				<div class="form__line">
+					<div class="form__label">E-mail</div>
+
+					<div class="form__filed">
+						<input type="email" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Отправить</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="modal-recovery">
+			<div class="modal-title">Восстановление данных</div>
+
+			<form action="" class="form modal__form">
+				<div class="form__line">
+					<div class="form__label">Код из письма</div>
+
+					<div class="form__filed">
+						<input type="text" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__line">
+					<div class="form__label">Повторите пароль</div>
+
+					<div class="form__filed">
+						<input type="password" value="" name="" class="form__input">
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="form__submit-btn btn-black">Отправить</button>
+				</div>
+			</form>
+		</section>
+
+		
+		<section class="modal modal-request" id="modal-request">
+			<div class="modal-request__wrap">
+				<div class="modal-request__box">
+					<div class="modal-request__icon">
+						<img data-src="images/ic_check.svg" src="images/img_plug.png" alt="" class="lazyload">
+					</div>
+
+					<div class="modal-request__title">Ваша заявка успешно оформлена!</div>
+
+					<div class="modal-request__desc">В ближайшее время с вами <br>свяжется наш менеджер</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<div class="js-load"></div>
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/inputmask.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
