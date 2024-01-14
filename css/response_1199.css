@@ -6,6 +6,16 @@
     }
 
 
+    .text-block h1,
+    .text-block .title
+    {
+        font-size: 32px;
+        font-weight: 700;
+
+        letter-spacing: 1.28px;
+    }
+
+
     .header
     {
         padding-top: 30px;

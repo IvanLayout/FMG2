@@ -636,6 +636,21 @@
     }
 
 
+    .page-links__link
+    {
+        width: 100%;
+    }
+
+    .page-links__link + .page-links__link
+    {
+        margin-top: 20px;
+    }
+
+    .page-news__link
+    {
+        margin-top: 30px;
+    }
+
 
     .footer
     {
