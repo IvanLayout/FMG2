@@ -49,6 +49,24 @@
     }
 
 
+    .form__subtitle
+    {
+        font-size: 14px;
+
+        margin-bottom: 20px;
+    }
+
+    .form__flex .form__line
+    {
+        width: 100%;
+    }
+
+    .section-form .form__flex .form__line
+    {
+        width: 100%;
+    }
+
+
     .header
     {
         padding-top: 12px;
@@ -402,11 +420,6 @@
         width: calc(100% - 140px);
     }
 
-    .form__flex .form__line
-    {
-        width: 100%;
-    }
-
     .info-password
     {
         min-height: 1px;
@@ -547,6 +560,91 @@
     .page-news__link
     {
         margin-top: 20px;
+    }
+
+
+    .contacts
+    {
+        margin-top: 20px;
+    }
+
+    .contacts__sector
+    {
+        padding-top: 30px;
+    }
+
+    .contacts__sector + .contacts__sector
+    {
+        margin-top: 40px;
+    }
+
+    .contacts__map
+    {
+        height: 240px;
+    }
+
+    .contacts__flex
+    {
+        margin-top: 13px;
+        padding-top: 27px;
+    }
+
+    .contacts__col
+    {
+        width: 100%;
+        min-height: 1px;
+        padding-bottom: 0;
+    }
+
+    .contacts__col + .contacts__col
+    {
+        margin-top: 20px;
+    }
+
+    .contacts__links
+    {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: auto;
+
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .contacts__links-link
+    {
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+    }
+
+    .contacts__links-link + .contacts__links-link
+    {
+        margin: 0 0 0 10px;
+    }
+
+    .contacts__col-box
+    {
+        max-width: none;
+    }
+
+    .contacts__adres
+    {
+        margin-top: 14px;
+    }
+
+    .contacts__time
+    {
+        margin-top: 14px;
+    }
+
+    .contacts__time + .contacts__time
+    {
+        margin-top: 14px;
     }
 
 

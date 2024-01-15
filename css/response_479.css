@@ -13,6 +13,27 @@
     }
 
 
+    .section-form .form__line
+    {
+        margin-bottom: 10px;
+    }
+
+    .form__bottom
+    {
+        margin-top: -10px;
+    }
+
+    .form__bottom .form__agree
+    {
+        font-size: 12px;
+        line-height: 1.2;
+
+        margin-top: 10px;
+
+        text-align: left;
+    }
+
+
     .btn-bord
     {
         font-size: 14px;
@@ -309,6 +330,13 @@
     .page-news__time
     {
         font-size: 14px;
+    }
+
+
+    .contacts__btn .btn-black
+    {
+        width: 100%;
+        padding: 0;
     }
 
 
