@@ -143,7 +143,8 @@ $(() => {
 		parent.find('.file-selection__path').text(val)
 
 		if(parent.find('.file-selection__path').text() == '') {
-			parent.find('.file-selection__path').text('Добавить файл')
+			let namePath = parent.find('.file-selection__path').data('name')
+			parent.find('.file-selection__path').text(namePath)
 		}
 	})
 })

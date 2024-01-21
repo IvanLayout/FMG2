@@ -738,6 +738,85 @@
     }
 
 
+    .advantages__bg
+    {
+        padding: 30px;
+
+        border-radius: 16px;
+    }
+
+    .advantages__items
+    {
+        flex-wrap: wrap;
+
+        margin-top: -40px;
+    }
+
+    .advantages__item
+    {
+        width: calc(50% - 10px);
+        min-width: 1px;
+        margin: 40px 0 0;
+
+        text-align: left;
+    }
+
+
+    .vacancy__item
+    {
+        width: 100%;
+
+        border-radius: 16px;
+    }
+
+
+
+    .info-vacancy__item
+    {
+        width: 100%;
+
+        border-radius: 16px;
+    }
+
+    .info-vacancy__item._red
+    {
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+        flex-direction: column;
+
+        min-height: 232px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .info-vacancy__item._red .info-vacancy__icon
+    {
+        margin: 0 0 auto 0;
+    }
+
+    .info-vacancy__item._red .info-vacancy__bot
+    {
+        display: block;
+
+        margin: 20px 0 0;
+    }
+
+    .info-vacancy__item._red .info-vacancy__name
+    {
+        font-size: 14px;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .info-vacancy__item._red .info-vacancy__desc
+    {
+        margin-top: 8px;
+    }
+
+
+
     .footer
     {
         padding: 40px 0 53px;

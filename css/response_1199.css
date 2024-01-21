@@ -299,6 +299,72 @@
     }
 
 
+    .advantages__bg
+    {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    .advantages__number
+    {
+        font-size: 42px;
+    }
+
+    .advantages__desc
+    {
+        font-size: 16px;
+    }
+
+
+    .vacancy__item
+    {
+        padding: 19px;
+    }
+
+    .vacancy__name
+    {
+        font-size: 16px;
+    }
+
+    .vacancy__desc
+    {
+        font-size: 16px;
+    }
+
+
+    .info-vacancy__item
+    {
+        min-height: 232px;
+        padding: 19px;
+    }
+
+    .info-vacancy__icon
+    {
+        width: 60px;
+        height: 60px;
+        padding: 13px;
+    }
+
+    .info-vacancy__icon::before
+    {
+        width: 79px;
+
+        background-size: auto 100%;
+    }
+
+    .info-vacancy__name
+    {
+        font-size: 14px;
+    }
+
+    .info-vacancy__desc
+    {
+        font-size: 14px;
+
+        margin-top: 8px;
+    }
+
+
     .footer__items-item + .footer__items-item
     {
         margin-left: 40px;

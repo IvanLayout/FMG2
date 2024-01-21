@@ -38,6 +38,12 @@
         text-align: left;
     }
 
+    .form__bottom .form__submit-btn._small
+    {
+        width: 100%;
+        padding: 0;
+    }
+
 
     .btn-bord
     {
@@ -545,6 +551,50 @@
         min-height: 26px;
         margin: 6px 0 0 6px;
         padding: 6px 15px;
+    }
+
+
+    .advantages__bg
+    {
+        padding: 20px;
+    }
+
+
+    .vacancy__items
+    {
+        margin-top: 6px;
+    }
+
+    .vacancy__item
+    {
+        min-height: 196px;
+        margin-top: 10px;
+    }
+
+    .vacancy__bot
+    {
+        margin-top: 20px;
+    }
+
+    .vacancy__desc
+    {
+        margin-top: 8px;
+    }
+
+
+    .info-vacancy__items
+    {
+        margin-top: -10px;
+    }
+
+    .info-vacancy__item
+    {
+        margin-top: 10px;
+    }
+
+    .info-vacancy__colr
+    {
+        margin-top: 10px;
     }
 
 

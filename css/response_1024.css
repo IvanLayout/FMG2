@@ -515,6 +515,23 @@
         text-align: center;
     }
 
+    .file-selection + .form__bottom
+    {
+        margin-top: 10px;
+    }
+
+    .form__bottom .form__submit-btn._small
+    {
+        display: inline-block;
+
+        width: auto;
+    }
+
+    .form__bottom .form__agree._left
+    {
+        text-align: left;
+    }
+
 
     .catalog
     {
@@ -1094,6 +1111,142 @@
         display: block;
     }
 
+
+    .advantages_marg
+    {
+        margin-top: 50px;
+    }
+
+    .advantages__bg
+    {
+        padding: 44px 0;
+    }
+
+    .advantages__item
+    {
+        min-width: 90px;
+        margin: 0 26px;
+    }
+
+    .advantages__number
+    {
+        font-size: 32px;
+    }
+
+    .advantages__desc
+    {
+        font-size: 14px;
+    }
+
+    .advantages__desc br
+    {
+        display: none;
+    }
+
+
+    .vacancy__items
+    {
+        margin-top: 0;
+    }
+
+    .vacancy__item
+    {
+        width: calc(50% - 10px);
+        min-height: 232px;
+        margin-top: 20px;
+    }
+
+    .vacancy__icon
+    {
+        width: 58px;
+        height: 58px;
+        padding: 12px;
+    }
+
+    .vacancy__sum
+    {
+        font-size: 16px;
+    }
+
+    .vacancy__name
+    {
+        font-size: 14px;
+    }
+
+    .vacancy__desc
+    {
+        font-size: 14px;
+    }
+
+
+    .info-vacancy__coll
+    {
+        width: 100%;
+    }
+
+    .info-vacancy__items
+    {
+        margin-top: -20px;
+    }
+
+    .info-vacancy__item
+    {
+        width: calc(50% - 10px);
+        margin-top: 20px;
+    }
+
+    .info-vacancy__colr
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .info-vacancy__item._red
+    {
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        min-height: 1px;
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+
+    .info-vacancy__item._red .info-vacancy__icon
+    {
+        flex-shrink: 0;
+
+        margin: 0;
+        margin-right: 28px;
+    }
+
+    .info-vacancy__item._red .info-vacancy__bot
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        margin: 0;
+    }
+
+    .info-vacancy__item._red .info-vacancy__name
+    {
+        font-size: 12px;
+
+        flex-shrink: 0;
+
+        width: 180px;
+        margin-right: 26px;
+    }
+
+    .info-vacancy__item._red .info-vacancy__desc
+    {
+        width: 100%;
+        margin: 0;
+    }
 
 
     .footer
