@@ -648,6 +648,96 @@
     }
 
 
+    .section-news__grid
+    {
+        margin-left: -10px;
+    }
+
+    .section-news__grid .news-item
+    {
+        width: calc(100%/2 - 10px);
+        margin-left: 10px;
+    }
+
+    .news-item__box
+    {
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+
+    .top-news__item
+    {
+        width: calc(50% - 5px);
+    }
+
+
+    .sorting__links-wrap
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px 0 10px;
+    }
+
+
+    .achievements__grid
+    {
+        margin: 6px 0 0 0;
+    }
+
+    .achievements__item
+    {
+        width: 100%;
+        min-height: 176px;
+        margin: 10px 0 0;
+    }
+
+    .achievements__info
+    {
+        font-size: 14px;
+    }
+
+
+    .about-top__coll
+    {
+        min-height: 280px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        border-radius: 16px;
+    }
+
+    .about-top__list li + li
+    {
+        margin-top: 16px;
+    }
+
+    .about-top__list li::before
+    {
+        top: 4px;
+    }
+
+    .about-top__colr img
+    {
+        border-radius: 16px;
+    }
+
+
+    .video-banner
+    {
+        min-height: 280px;
+
+        border-radius: 16px;
+    }
+
+
+    .history__list-item
+    {
+        max-width: none;
+    }
+
+
     .footer
     {
         padding: 40px 0 53px;

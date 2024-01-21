@@ -233,6 +233,72 @@
     }
 
 
+    .sorting__link
+    {
+        font-size: 14px;
+        line-height: 38px;
+    }
+
+
+    .awards__slider .swiper-overflow
+    {
+        overflow: visible;
+    }
+
+    .achievements__grid
+    {
+        margin: 0 0 0 -20px;
+    }
+
+    .achievements__item
+    {
+        width: calc(100%/2 - 20px);
+        margin: 20px 0 0 20px;
+        padding-left: 19px;
+    }
+
+    .achievements__name
+    {
+        font-size: 14px;
+    }
+
+    .achievements__name b
+    {
+        font-size: 24px;
+    }
+
+
+    .history__img
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .history__number
+    {
+        margin-right: 12px;
+    }
+
+    .history__date
+    {
+        font-size: 16px;
+    }
+
+    .history__list
+    {
+        margin: -4px 0 0 -10px;
+    }
+
+    .history__list-item
+    {
+        font-size: 14px;
+
+        min-height: 44px;
+        margin: 10px 0 0 10px;
+        padding: 12px 15px;
+    }
+
+
     .footer__items-item + .footer__items-item
     {
         margin-left: 40px;
