@@ -12,6 +12,12 @@
         font-size: 14px;
     }
 
+
+    .text-block_marg
+    {
+        margin-top: 20px;
+    }
+
     .text-block h2
     {
         font-size: 16px;
@@ -42,6 +48,18 @@
     {
         width: 100%;
         padding: 0;
+    }
+
+
+    .header__bg
+    {
+        padding: 56px 10px 38px;
+    }
+
+    .header__block
+    {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
 
@@ -598,6 +616,135 @@
     }
 
 
+    .aside-news__name
+    {
+        font-size: 12px;
+    }
+
+
+    .about-brand__images
+    {
+        margin-top: 10px;
+    }
+
+    .about-brand__images-item
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .about-brand__images-img
+    {
+        padding-bottom: 65.35%;
+    }
+
+    .about-brand__images-img img
+    {
+        border-radius: 16px;
+
+        object-position: 0 0;
+    }
+
+
+    .banner-collection
+    {
+        border-radius: 16px;
+    }
+
+
+    .advantages-brand__bg
+    {
+        padding: 30px 20px;
+
+        border-radius: 16px;
+    }
+
+    .advantages-brand__items
+    {
+        margin-left: 0;
+    }
+
+    .advantages-brand__item
+    {
+        width: 100%;
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+    .advantages-brand__item-desc br
+    {
+        display: none;
+    }
+
+
+    .document
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        width: 100%;
+
+        text-align: left;
+
+        border-radius: 16px;
+    }
+
+    .document__icon
+    {
+        flex-shrink: 0;
+
+        width: 56px;
+        margin-right: 16px;
+    }
+
+    .document__box
+    {
+        margin-top: 0;
+    }
+
+
+    .partners-inner__partner
+    {
+        width: calc(100%/2 - 10px);
+        padding-right: 17px;
+        padding-left: 17px;
+
+        border-radius: 16px;
+    }
+
+    .brands__item
+    {
+        width: calc(100%/2 - 10px);
+    }
+
+
+    .partner-program__wrap .partner-program__planet-wrap
+    {
+        padding-bottom: 49.5%;
+    }
+
+
+    .aside-news__top .aside-news__link
+    {
+        display: none;
+    }
+
+    .aside-news__link
+    {
+        display: block;
+    }
+
+
+    .utilization__btn
+    {
+        width: calc(50% - 5px);
+    }
+
+
     .footer__items
     {
         display: block;
@@ -640,5 +787,48 @@
     {
         width: 100%;
         margin-top: 30px;
+    }
+
+
+    .fancybox__slide
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .modal
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .modal-request__wrap
+    {
+        min-height: 348px;
+    }
+
+    .modal-request__icon::before
+    {
+        width: 74px;
+        margin-left: -37px;
+    }
+
+    .modal-request__icon
+    {
+        height: 82px;
+    }
+
+    .modal-request__title
+    {
+        font-size: 14px;
+
+        margin-top: 26px;
+
+        text-transform: uppercase;
+    }
+
+    .modal-request__desc
+    {
+        margin-top: 10px;
     }
 }

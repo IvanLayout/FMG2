@@ -164,6 +164,11 @@
         min-height: 540px;
     }
 
+    .partner-program__box_small
+    {
+        min-height: 1px;
+    }
+
     .partner-program__planet
     {
         max-width: 65%;
@@ -188,18 +193,16 @@
     }
 
 
-    .our-project__colr
+    .our-project__flex
     {
-        width: 100%;
-        max-width: none;
-        padding-top: 0;
+        flex-wrap: wrap;
     }
 
     .our-project__coll
     {
         order: 2;
 
-        width: 100%;
+        width: calc(100% + 10px);
         max-width: none;
         margin-top: 60px;
         padding-bottom: 0;
@@ -208,6 +211,12 @@
     .our-project__coll-title br
     {
         display: none;
+    }
+
+    .our-project__img
+    {
+        width: calc(100% - 282px);
+        max-width: none;
     }
 
 
@@ -362,6 +371,48 @@
         font-size: 14px;
 
         margin-top: 8px;
+    }
+
+
+    .partners-inner__partner
+    {
+        min-height: 120px;
+        padding: 15px;
+    }
+
+
+    .brands__item
+    {
+        font-size: 18px;
+
+        min-height: 120px;
+    }
+
+
+    .advantages-brand__bg
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .advantages-brand__item-number
+    {
+        font-size: 40px;
+    }
+
+    .advantages-brand__item-desc
+    {
+        font-size: 14px;
+
+        margin-top: 3px;
+    }
+
+
+    .utilization__info
+    {
+        left: 20px;
+
+        width: 340px;
     }
 
 

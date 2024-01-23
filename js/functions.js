@@ -147,6 +147,38 @@ $(() => {
 			parent.find('.file-selection__path').text(namePath)
 		}
 	})
+
+
+	$('body').on('click', '.our-project__link', function (e) {
+		e.preventDefault()
+
+		if ( !$(this).hasClass('_active') ) {
+			$(this).closest('.our-project').find('.our-project__link').removeClass('_active')
+			$(this).closest('.our-project').find('.our-project__coll, .our-project__img').removeClass('_show')
+			
+			$(this).addClass('_active')
+
+			let project = $(this).data('btn-project')
+
+			$(this).closest('.our-project').find(`._${project}`).addClass('_show')
+		}
+	})
+
+
+	$('body').on('click', '.utilization__btn', function (e) {
+		e.preventDefault()
+
+		if ( !$(this).hasClass('_active') ) {
+			$(this).closest('.utilization__wrap').find('.utilization__btn').removeClass('_active')
+			$(this).closest('.utilization__wrap').find('.utilization__info, .utilization__map').removeClass('_show')
+
+			$(this).addClass('_active')
+
+			let tab = $(this).data('tab')
+
+			$(tab).addClass('_show')
+		}
+	})
 })
 
 

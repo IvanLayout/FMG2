@@ -44,7 +44,7 @@
 					<div class="cont _flex">
 						<div class="header__logo">
 							<a href="/">
-								<img src="images/logo.jpg" alt="">
+								<img src="images/logo.png" alt="">
 							</a>
 						</div>
 
@@ -52,7 +52,7 @@
 							<div class="header__bg">
 								<div class="header__logo">
 									<a href="/">
-										<img src="images/logo.jpg" alt="">
+										<img src="images/logo.png" alt="">
 									</a>
 								</div>
 
@@ -125,6 +125,8 @@
 
 
 				<section class="first-section">
+					<video muted autoplay playsinline preload loop poster="video/poster1.jpg" src="video/video1.mp4" type="video/mp4" class="first-section__video"></video>
+
 					<div class="cont">
 						<div class="first-section__top">
 							<div class="first-section__top-flex _flex">
@@ -136,7 +138,7 @@
 
 
 						<div class="first-section__banner">
-							<img data-src="images/tmp/main_banner.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							<!-- <img data-src="images/tmp/main_banner.jpg" src="images/img_plug.png" alt="" class="lazyload"> -->
 						</div>
 					</div>
 				</section>
@@ -148,6 +150,36 @@
 
 						<div class="brands__slider swiper">
 							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand1.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand2.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand3.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand4.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand5.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="brands__brand">
+										<img src="images/tmp/brand6.png" alt="">
+									</a>
+								</div>
 								<div class="swiper-slide">
 									<a href="/" class="brands__brand">
 										<img src="images/tmp/brand1.png" alt="">
@@ -693,6 +725,41 @@
 										<img src="images/tmp/partner5.svg" alt="">
 									</a>
 								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner6.svg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner1.svg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner2.svg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner3.svg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner4.png" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner5.svg" alt="">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="/" class="partners__partner">
+										<img src="images/tmp/partner6.svg" alt="">
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -703,11 +770,15 @@
 					<img data-src="images/logo_abs2.svg" src="images/img_plug.png" alt="" class="lazyload our-project__logo">
 
 					<div class="cont">
-						<div class="our-project__flex _flex">
-							<div class="our-project__coll">
-								<div class="our-project__coll-top">
-									<div class="main-title">Наши проекты</div>
+						<div class="main-title">Наши проекты</div>
 
+						<div class="our-project__flex _flex">
+							<button type="button" data-btn-project="project1" class="our-project__link _active">
+								<span>Поддержка</span>
+							</button>
+
+							<div class="our-project__coll _project1 _show">
+								<div class="our-project__coll-top">
 									<div class="our-project__title">Поддержка экологических инициатив от GP</div>
 
 									<div class="our-project__desc">
@@ -731,21 +802,79 @@
 								</div>
 							</div>
 
-							<div class="our-project__colr _flex">
-								<div class="our-project__img">
-									<div class="our-project__img-wrap">
-										<img data-src="images/tmp/img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+							<div class="our-project__img _project1 _show">
+								<div class="our-project__img-wrap">
+									<img data-src="images/tmp/img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+
+							<button type="button" data-btn-project="project2" class="our-project__link">
+								<span>Союзмультфильм</span>
+							</button>
+
+							<div class="our-project__coll _project2">
+								<div class="our-project__coll-top">
+									<div class="our-project__title">Союзмультфильм</div>
+
+									<div class="our-project__desc">
+										Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях.
 									</div>
 								</div>
 
-								<div class="our-project__links _flex">
-									<a href="/" class="our-project__link">
-										<span>Союзмультфильм</span>
-									</a>
+								<div class="our-project__coll-bot">
+									<div class="our-project__coll-title">Сдайте батарейки <br>на переработку:</div>
 
-									<a href="/" class="our-project__link">
-										<span>Старт (ребрендинг)</span>
-									</a>
+									<div class="our-project__btn">
+										<a href="/" class="btn-bord">
+											<span>
+												сдать на переработку
+												<svg>
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="our-project__img _project2">
+								<div class="our-project__img-wrap">
+									<img data-src="images/tmp/stock_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+
+							<button type="button" data-btn-project="project3" class="our-project__link">
+								<span>Старт (ребрендинг)</span>
+							</button>
+
+							<div class="our-project__coll _project3">
+								<div class="our-project__coll-top">
+									<div class="our-project__title">Старт (ребрендинг)</div>
+
+									<div class="our-project__desc">
+										Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях. Свяжитесь с нами для получения более подробной информации о компании и наших возможностях.
+									</div>
+								</div>
+
+								<div class="our-project__coll-bot">
+									<div class="our-project__coll-title">Сдайте батарейки <br>на переработку:</div>
+
+									<div class="our-project__btn">
+										<a href="/" class="btn-bord">
+											<span>
+												сдать на переработку
+												<svg>
+													<use xlink:href="images/sprite.svg#arrow1"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="our-project__img _project3">
+								<div class="our-project__img-wrap">
+									<img data-src="images/tmp/banner.jpg" src="images/img_plug.png" alt="" class="lazyload">
 								</div>
 							</div>
 						</div>
@@ -792,7 +921,7 @@
 				<div class="cont ">
 					<div class="footer__top _flex">
 						<div class="footer__logo">
-							<img src="images/logo.jpg" alt="">
+							<img src="images/logo.png" alt="">
 						</div>
 
 						<div class="footer__items _flex">
@@ -863,7 +992,7 @@
 						</div>
 
 						<div class="footer__creator">
-							<a href="/">
+							<a href="/" rel="nofollow" target="_blank">
 								<img data-src="images/creator.svg" src="images/img_plug.png" alt="" class="lazyload">
 							</a>
 						</div>

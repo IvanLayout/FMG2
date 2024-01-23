@@ -60,6 +60,15 @@ $(() => {
 				},
 				'480': {
 					spaceBetween: 34
+				},
+				'768': {
+					spaceBetween: 50
+				},
+				'1025': {
+					spaceBetween: 60
+				},
+				'1200': {
+					spaceBetween: 108
 				}
 			}
 		})

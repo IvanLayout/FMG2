@@ -9,7 +9,6 @@
     .page-title
     {
         font-size: 32px;
-        font-weight: 700;
     }
 
     .page-subtitle
@@ -371,11 +370,6 @@
 
         max-width: 167px;
         max-height: calc(100% - 58px);
-    }
-
-    .our-project__title
-    {
-        margin-top: 20px;
     }
 
     .our-project__coll-bot
@@ -1247,6 +1241,242 @@
         width: 100%;
         margin: 0;
     }
+
+
+    .content
+    {
+        width: 100%;
+        max-width: none;
+    }
+
+
+    .partner-program_small
+    {
+        width: calc(100% + 80px);
+        margin-right: -40px;
+        margin-left: -40px;
+    }
+
+    .partner-program__wrap
+    {
+        padding: 0 40px;
+    }
+
+    .partner-program__wrap .partner-program__planet-wrap
+    {
+        padding-bottom: 34.5%;
+    }
+
+    .partner-program_small .partner-program__logo
+    {
+        display: block;
+    }
+
+
+    .brands__items
+    {
+        margin: 4px 0 0 -20px;
+    }
+
+    .brands__item
+    {
+        font-size: 12px;
+
+        width: calc(100%/5 - 20px);
+        min-height: 90px;
+        margin: 20px 0 0 20px;
+        padding: 9px;
+    }
+
+    .partners-inner__items
+    {
+        margin: 4px 0 0 -20px;
+    }
+
+    .partners-inner__partner
+    {
+        font-size: 12px;
+
+        width: calc(100%/4 - 20px);
+        min-height: 110px;
+        margin: 20px 0 0 20px;
+        padding: 9px;
+    }
+
+
+    .documents__items
+    {
+        margin-top: 4px;
+    }
+
+    .document
+    {
+        width: calc(50% - 10px);
+        margin-top: 20px;
+    }
+
+
+    .advantages-brand__bg
+    {
+        margin-top: 15px;
+    }
+
+
+    .banner-collection__img
+    {
+        padding-bottom: 52.8%;
+    }
+
+    .banner-collection__box
+    {
+        padding: 25px 20px;
+    }
+
+    .banner-collection__title
+    {
+        font-size: 24px;
+    }
+
+    .banner-collection__desc
+    {
+        font-size: 14px;
+
+        max-width: 510px;
+    }
+
+
+    .events__items
+    {
+        margin-top: -10px;
+    }
+
+
+    .about-brand__images-item
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .aside
+    {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .aside-news__top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .aside-news__title
+    {
+        font-size: 24px;
+    }
+
+    .aside-news__top .aside-news__link
+    {
+        display: block;
+
+        margin: 0;
+        padding: 0;
+
+        border: none;
+    }
+
+    .aside-news__link
+    {
+        display: none;
+    }
+
+    .aside-news__items
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .aside-news__item
+    {
+        width: calc(50% - 10px);
+    }
+
+    .aside-news__img
+    {
+        margin-right: 11px;
+    }
+
+
+    .utilization__tabs
+    {
+        display: flex;
+    }
+
+    .utilization__info
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        visibility: hidden;
+        overflow: hidden;
+
+        width: 100%;
+        height: 0;
+        padding: 0;
+
+        opacity: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .utilization__info._show
+    {
+        visibility: visible;
+        overflow: visible;
+
+        height: auto;
+        padding: 24px 18px 0;
+
+        opacity: 1;
+        border: 1px solid rgba(13, 7, 41, .11);
+
+        transition: opacity .5s linear;
+    }
+
+    .utilization__map
+    {
+        position: relative;
+
+        visibility: hidden;
+        overflow: hidden;
+
+        width: 100%;
+        height: 0;
+
+        opacity: 0;
+    }
+
+    .utilization__map._show
+    {
+        visibility: visible;
+        overflow: visible;
+
+        height: 600px;
+
+        opacity: 1;
+
+        transition: opacity .5s linear;
+    }
+
 
 
     .footer
